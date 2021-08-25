@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielandrespanta/danielandrespanta.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielandrespanta/danielandrespanta/issues"
+  },
+  "homepage": "https://github.com/danielandrespanta/danielandrespanta#readme",
   "description": ""
 }
