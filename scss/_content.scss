@@ -1,0 +1,70 @@
+h1,h2,h3,h4{
+	font-family: $fonttxt;
+	color: #001a66;
+	text-align: center;
+}
+h5{
+	font-family: $fonttxt;
+	color: #FF6600;
+	text-align: center;
+
+}
+p{
+	font-family: $fonttxt;
+	text-align: justify;
+	color: black;
+
+}
+
+
+table{
+	font-family: $fonttxt;
+}
+
+
+section{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+html {
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #F2F3EB;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+.imgindex{
+	width: 100%;
+}
+

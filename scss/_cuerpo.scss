@@ -1,0 +1,592 @@
+.articleflex {
+	display: flex;
+	flex: 1;
+	padding-right: 30px;
+	padding-left: 30px;
+	align-content: space-between;
+}
+
+.actualidad{
+
+	padding: 40px;		
+}
+
+.actualidad__img {
+	width: $w-100;
+
+	
+}
+
+.actualidad__titulo{
+	// font-family: fontMain;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.actualidad__texto{
+	text-align: justify;
+	width: $w-100;
+
+}
+
+.sl1{
+	text-align: center;
+}
+.sl2{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+.maindiv{	
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.covid {
+background-image: url("../img/covid.jpg"); 
+background-position: center;
+background-repeat:no-repeat;
+background-size: cover;
+}
+
+.covid__texto{
+	padding-top: 50px;
+	text-align: center;
+	color: white;
+	font-family: $fonttxt;
+}
+.covid__button {
+  background-color: #fa6400;
+  color: white;
+  padding: 15px 28px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+
+  cursor: pointer;
+
+}
+.covid__button:hover{
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.nosotros{
+	background-color: #F5DCB0 + #00F2E2;
+	border-radius: 15px;
+	padding: 20px;
+	align-items: center;
+	margin-bottom: 50px; 
+}
+
+.nosotros__titulo{
+
+}
+.nosotros__texto{
+	text-align: justify;
+}
+
+
+
+// hoja contacto
+
+
+
+
+#container2 {
+  border: solid 3px #474544;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+
+.h1form {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: $w-100;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #474544;
+}
+
+:-moz-placeholder { 
+	color: #474544;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #474544;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #474544;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #474544;
+  color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+  #container2 {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}
+
+
+
+// error404
+
+.main404
+ {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(http://www.reactiongifs.us/wp-content/uploads/2015/04/nothing_to_see_here_naked_gun.gif)
+    no-repeat center center fixed;
+  background-size: cover;
+  background-color: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-position: bottom;
+}
+
+.content404 {
+  font-family: $fonttxt;
+  color: white;
+  background-color: none;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.h1error {
+  font-size: 160px;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.h2error {
+	color: white;
+  margin-top: 0;
+  max-width: 700px;
+  font-size: 30px;
+  width: 90%;
+}
+
+.p404 {
+  text-align: left;
+  padding-bottom: 32px;
+}
+
+.btn404 {
+	color: white;
+  display: inline-block;
+  border: 1px solid #aaa;
+  border-radius: 40px;
+  padding: 15px 30px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  &:hover {
+  	cursor: pointer;
+    color: #e2e2e2;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  a{
+  	color: white;
+  	text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .btn404 {
+    background-color: white;
+    color: #444444;
+    width: 100%;
+  }
+
+  .h1error {
+    font-size: 120px;
+  }
+}
+
+
+
+// Codigo tarjetas clientes //
+
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+
+$imageIds: '1517021897933-0e0319cfbc28', '1533903345306-15d1c30952de', '1545243424-0ce743321e11', '1531306728370-e2ebd9d7bb99';
+
+$bp-md: 600px;
+$bp-lg: 800px;
+
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: 'Rubik', sans-serif;
+  --font-serif: 'Cardo', serif;
+}
+
+// * {
+//   box-sizing: border-box;
+// }
+
+// html, body {
+//   height: 100%;
+// }
+
+
+.page-content {
+	place-items: center;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+  
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: $bp-lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+.cardclient {  
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
+    0 2px 2px rgba(0,0,0,0.1), 
+    0 4px 4px rgba(0,0,0,0.1), 
+    0 8px 8px rgba(0,0,0,0.1),
+    0 16px 16px rgba(0,0,0,0.1);
+  
+  @media (min-width: $bp-md) {
+    height: 350px;
+  }
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+  }
+  
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(
+      to bottom,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.009) 11.7%,
+      hsla(0, 0%, 0%, 0.034) 22.1%,
+      hsla(0, 0%, 0%, 0.072) 31.2%,
+      hsla(0, 0%, 0%, 0.123) 39.4%,
+      hsla(0, 0%, 0%, 0.182) 46.6%,
+      hsla(0, 0%, 0%, 0.249) 53.1%,
+      hsla(0, 0%, 0%, 0.320) 58.9%,
+      hsla(0, 0%, 0%, 0.394) 64.3%,
+      hsla(0, 0%, 0%, 0.468) 69.3%,
+      hsla(0, 0%, 0%, 0.540) 74.1%,
+      hsla(0, 0%, 0%, 0.607) 78.8%,
+      hsla(0, 0%, 0%, 0.668) 83.6%,
+      hsla(0, 0%, 0%, 0.721) 88.7%,
+      hsla(0, 0%, 0%, 0.762) 94.1%,
+      hsla(0, 0%, 0%, 0.790) 100%
+    );
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+  }
+  
+  @each $id in $imageIds {
+    $i: index($imageIds, $id);
+    
+    &:nth-child(#{$i}):before {
+      background-image: url(https://images.unsplash.com/photo-#{$id}?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+    }
+  }
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+  
+  > * + * {
+    margin-top: 1rem;
+  }
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+  
+  &:hover {
+    background-color: lighten(black, 5%);
+  }
+  
+  &:focus {
+    outline: 1px dashed yellow;
+    outline-offset: 3px;
+  }
+}
+
+@media (hover: hover) and (min-width: $bp-md) {
+  .cardclient:after {
+    transform: translateY(0);
+  }
+  
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+    
+    > *:not(.title) {
+      opacity: 0;
+      transform: translateY(1rem);
+      transition:
+        transform var(--d) var(--e),
+        opacity var(--d) var(--e);
+    }
+  }
+  
+  .cardclient:hover,
+  .cardclient:focus-within {
+    align-items: center;
+
+    &:before { transform: translateY(-4%); }
+    &:after { transform: translateY(-50%); }
+
+    .content {
+      transform: translateY(0);
+
+      > *:not(.title) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: calc(var(--d) / 8);
+      }
+    }
+  }
+  
+  .cardclient:focus-within {
+    &:before,
+    &:after,
+    .content,
+    .content > *:not(.title) {
+      transition-duration: 0s;
+    }
+  }
+}
+
+.divvvv{
+  background-color: black;
+}
