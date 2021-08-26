@@ -375,9 +375,9 @@ textarea {
 
 // Codigo tarjetas clientes //
 
-@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
 
-$imageIds: '1517021897933-0e0319cfbc28', '1533903345306-15d1c30952de', '1545243424-0ce743321e11', '1531306728370-e2ebd9d7bb99';
+ $imageIds: 'tarjeta1.jpg', 'tarjeta2.jpg', 'tarjeta3.jpg', 'tarjeta4.jpg', 'tarjeta5.jpg', 'tarjeta6.jpg', 'tarjeta7.jpg', 'tarjeta9.jpg'; 
 
 $bp-md: 600px;
 $bp-lg: 800px;
@@ -460,25 +460,25 @@ $bp-lg: 800px;
     width: 100%;
     height: 200%;
     pointer-events: none;
-    background-image: linear-gradient(
-      to bottom,
-      hsla(0, 0%, 0%, 0) 0%,
-      hsla(0, 0%, 0%, 0.009) 11.7%,
-      hsla(0, 0%, 0%, 0.034) 22.1%,
-      hsla(0, 0%, 0%, 0.072) 31.2%,
-      hsla(0, 0%, 0%, 0.123) 39.4%,
-      hsla(0, 0%, 0%, 0.182) 46.6%,
-      hsla(0, 0%, 0%, 0.249) 53.1%,
-      hsla(0, 0%, 0%, 0.320) 58.9%,
-      hsla(0, 0%, 0%, 0.394) 64.3%,
-      hsla(0, 0%, 0%, 0.468) 69.3%,
-      hsla(0, 0%, 0%, 0.540) 74.1%,
-      hsla(0, 0%, 0%, 0.607) 78.8%,
-      hsla(0, 0%, 0%, 0.668) 83.6%,
-      hsla(0, 0%, 0%, 0.721) 88.7%,
-      hsla(0, 0%, 0%, 0.762) 94.1%,
-      hsla(0, 0%, 0%, 0.790) 100%
-    );
+    // background-image: linear-gradient(
+    //   to bottom,
+    //   hsla(0, 0%, 0%, 0) 0%,
+    //   hsla(0, 0%, 0%, 0.009) 11.7%,
+    //   hsla(0, 0%, 0%, 0.034) 22.1%,
+    //   hsla(0, 0%, 0%, 0.072) 31.2%,
+    //   hsla(0, 0%, 0%, 0.123) 39.4%,
+    //   hsla(0, 0%, 0%, 0.182) 46.6%,
+    //   hsla(0, 0%, 0%, 0.249) 53.1%,
+    //   hsla(0, 0%, 0%, 0.320) 58.9%,
+    //   hsla(0, 0%, 0%, 0.394) 64.3%,
+    //   hsla(0, 0%, 0%, 0.468) 69.3%,
+    //   hsla(0, 0%, 0%, 0.540) 74.1%,
+    //   hsla(0, 0%, 0%, 0.607) 78.8%,
+    //   hsla(0, 0%, 0%, 0.668) 83.6%,
+    //   hsla(0, 0%, 0%, 0.721) 88.7%,
+    //   hsla(0, 0%, 0%, 0.762) 94.1%,
+    //   hsla(0, 0%, 0%, 0.790) 100%
+    // );
     transform: translateY(-50%);
     transition: transform calc(var(--d) * 2) var(--e);
   }
@@ -487,7 +487,7 @@ $bp-lg: 800px;
     $i: index($imageIds, $id);
     
     &:nth-child(#{$i}):before {
-      background-image: url(https://images.unsplash.com/photo-#{$id}?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+      background-image: url(../img/#{$id});
     }
   }
 }
@@ -533,7 +533,8 @@ $bp-lg: 800px;
   border: none;
   
   &:hover {
-    background-color: lighten(black, 5%);
+    background-color: lighten(#001A61, 5%);
+    color: white;
   }
   
   &:focus {
