@@ -476,7 +476,8 @@ textarea {
 
 .copy {
   font-size: 1.125rem;
-  line-height: 1.35; }
+  line-height: 1.35;
+  text-align: center; }
 
 .btn {
   cursor: pointer;
