@@ -460,8 +460,9 @@ textarea {
   display: none; }
 
 .cardclient:hover .imgcliente {
-  opacity: .10;
+  opacity: 0.10;
   filter: grayscale(0.85);
+  -webkit-filter: grayscale(0.85);
   transition: all .25s ease; }
 
 .content:hover .imgcliente {
