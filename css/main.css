@@ -451,8 +451,23 @@ textarea {
   padding: 1rem;
   transition: transform var(--d) var(--e);
   z-index: 1; }
-  .content > * + * {
-    margin-top: 1rem; }
+
+.imgcliente {
+  position: absolute;
+  top: 124px; }
+
+.imgcliente-xs {
+  display: none; }
+
+.cardclient:hover .imgcliente {
+  opacity: .10;
+  filter: grayscale(0.85);
+  transition: all .25s ease; }
+
+.content:hover .imgcliente {
+  opacity: 1%;
+  filter: grayscale(0.75);
+  transition: all .75s ease; }
 
 .title {
   font-size: 1.3rem;
@@ -513,6 +528,13 @@ textarea {
   .cardclient:focus-within .content,
   .cardclient:focus-within .content > *:not(.title) {
     transition-duration: 0s; } }
+
+@media screen and (max-width: 480px) {
+  .imgcliente-xs {
+    display: block;
+    margin-top: 32px; }
+  .imgcliente {
+    display: none; } }
 
 footer {
   height: auto;
