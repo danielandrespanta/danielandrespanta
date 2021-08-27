@@ -475,9 +475,7 @@ textarea {
   line-height: 1.2; }
 
 .copy {
-  font-family: var(--font-serif);
   font-size: 1.125rem;
-  font-style: italic;
   line-height: 1.35; }
 
 .btn {
