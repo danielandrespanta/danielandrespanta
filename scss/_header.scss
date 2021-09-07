@@ -8,6 +8,7 @@ nav{
 	text-decoration: none;
 	color: #36669B;
 	line-height: 80px;
+	float: left;
 	
 	}
 
@@ -34,4 +35,7 @@ nav{
 .sl3{
 	color: $fc-o;
 	font-weight: bold;
+}
+.divnav{
+	float: right;
 }

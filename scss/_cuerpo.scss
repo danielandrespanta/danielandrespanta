@@ -622,3 +622,40 @@ top: 124px;
   }
   }
 
+.pMkt{
+  color: white;
+  font-size: 45px;
+  text-align: left;
+  font-weight: bold;
+  line-height: 97%;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+}
+.pMkt2{
+  color: white;
+  padding-left:6em;
+  text-align: left;
+}
+
+.film1{
+  background-color: #004860;
+}
+
+.film2{
+  padding-top: 4em;
+  background-color:white;
+}
+
+.tmkt{
+  text-align: center;
+}
+
+.cardmkt{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+
+}

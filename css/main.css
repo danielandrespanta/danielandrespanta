@@ -5,7 +5,8 @@ nav {
 .logopadre a {
   text-decoration: none;
   color: #36669B;
-  line-height: 80px; }
+  line-height: 80px;
+  float: left; }
 
 .separadorNav {
   top: 0;
@@ -25,6 +26,9 @@ nav {
 .sl3 {
   color: #FF6600;
   font-weight: bold; }
+
+.divnav {
+  float: right; }
 
 h1, h2, h3, h4 {
   font-family: "Quicksand", sans-serif;
@@ -54,6 +58,10 @@ html {
 
 body {
   background: #F2F3EB; }
+
+main {
+  margin-bottom: 30px;
+  margin-top: 30px; }
 
 button {
   overflow: visible; }
@@ -535,6 +543,38 @@ textarea {
     margin-top: 32px; }
   .imgcliente {
     display: none; } }
+
+.pMkt {
+  color: white;
+  font-size: 45px;
+  text-align: left;
+  font-weight: bold;
+  line-height: 97%;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em; }
+
+.pMkt2 {
+  color: white;
+  padding-left: 6em;
+  text-align: left; }
+
+.film1 {
+  background-color: #004860; }
+
+.film2 {
+  padding-top: 4em;
+  background-color: white; }
+
+.tmkt {
+  text-align: center; }
+
+.cardmkt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word; }
 
 footer {
   height: auto;
