@@ -87,6 +87,12 @@ form {
 .imgindex {
   width: 100%; }
 
+.BI {
+  list-style: auto;
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+  color: black; }
+
 .articleflex {
   display: flex;
   flex: 1;
@@ -191,7 +197,10 @@ form {
   float: right;
   width: 45%; }
 
-input[type='text'], [type='email'], select, textarea {
+input[type='text'],
+[type='email'],
+select,
+textarea {
   background: none;
   border: none;
   border-bottom: solid 2px #474544;
@@ -214,7 +223,9 @@ input[type='text'], [type='email'], select, textarea {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
-input[type='text']:focus, [type='email']:focus, textarea:focus {
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
   outline: none;
   padding: 0 0 0.875em 0; }
 
@@ -303,7 +314,10 @@ textarea {
     width: 35px; }
   .underline {
     width: 53px; }
-  input[type='text'], [type='email'], select, textarea {
+  input[type='text'],
+  [type='email'],
+  select,
+  textarea {
     font-size: 0.875em; } }
 
 .main404 {
@@ -576,6 +590,203 @@ textarea {
   min-width: 0;
   word-wrap: break-word; }
 
+.img-carousel {
+  min-height: 180px; }
+
+.business {
+  position: relative;
+  top: 0%;
+  padding: 0 3rem; }
+
+svg {
+  max-width: 600px;
+  display: block;
+  margin: auto; }
+
+svg path,
+svg g {
+  transform-box: fill-box; }
+
+.wheels {
+  transform-origin: 50% 50%; }
+  .wheels#wheel1 {
+    animation: rotate_clockwise 3.5s 1 ease-in-out forwards;
+    animation-delay: 0.5s; }
+  .wheels#wheel2 {
+    animation: rotate_anticlockwise 3.5s 1 ease-in-out forwards;
+    animation-delay: 0.5s; }
+  .wheels#wheel3 {
+    animation: rotate_clockwise 3.5s 1 ease-in-out forwards;
+    animation-delay: 0.5s; }
+
+#watch {
+  transform-origin: 50% 50%;
+  animation: watch .9s 1 ease-in forwards; }
+
+.sheets {
+  transform-origin: 50% 50%; }
+  .sheets#sheet1 {
+    animation: sheet1 .9s 1 ease-in forwards;
+    animation-delay: 0.1s; }
+  .sheets#sheet2 {
+    animation: sheet2 .9s 1 ease-in forwards;
+    animation-delay: 0.2s; }
+
+#world {
+  transform-origin: 50% 50%;
+  animation: world .9s 1 ease-in forwards;
+  animation-delay: 0.3s; }
+
+.stars {
+  transform-origin: 50% 50%; }
+  .stars#star1 {
+    animation: star1 .9s 1 ease-in forwards;
+    animation-delay: 0.4s; }
+  .stars#star2 {
+    animation: star2 .9s 1 ease-in forwards;
+    animation-delay: 0.5s; }
+
+#graphic {
+  transform-origin: 50% 50%; }
+  #graphic #line {
+    animation: graphic 1s 1 ease-in forwards;
+    animation-delay: 3.2s;
+    stroke-dasharray: 99;
+    stroke-dashoffset: 100; }
+  #graphic .circles {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 99;
+    stroke-dashoffset: 100; }
+    #graphic .circles#circle1 {
+      animation: graphic 1s 1 ease-in forwards;
+      animation-delay: 2s;
+      opacity: 0; }
+    #graphic .circles#circle2 {
+      animation: graphic 1s 1 ease-in forwards;
+      animation-delay: 2.2s; }
+    #graphic .circles#circle3 {
+      animation: graphic 1s 1 ease-in forwards;
+      animation-delay: 2.4s; }
+    #graphic .circles#circle4 {
+      animation: graphic 1s 1 ease-in forwards;
+      animation-delay: 2.6s; }
+    #graphic .circles#circle5 {
+      animation: graphic 1s 1 ease-in forwards;
+      animation-delay: 2.8s; }
+    #graphic .circles#circle6 {
+      animation: graphic 1s 1 ease-in forwards;
+      animation-delay: 3s; }
+    #graphic .circles#circle7 {
+      animation: graphic 1s 1 ease-in forwards;
+      animation-delay: 3.2s;
+      opacity: 0; }
+
+.pies {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 199;
+  stroke-dashoffset: 200;
+  animation: pies 1s 1 ease-in-out forwards;
+  animation-delay: 3.2s; }
+
+#grid {
+  animation-delay: 1.2s; }
+
+#tube #right {
+  transform-origin: 0% 0%;
+  transform: rotateY(0);
+  animation: tube 5s 1 ease-in-out forwards;
+  animation-delay: 1.4s; }
+
+@keyframes tube {
+  0% {
+    transform: rotateY(0); }
+  10% {
+    transform: rotateY(18deg); }
+  14% {
+    transform: rotateY(-12deg); }
+  17% {
+    transform: rotateY(0deg); }
+  25% {
+    transform: rotateY(0deg); }
+  100% {
+    transform: rotateY(0); } }
+
+@keyframes pies {
+  0% {
+    stroke-dashoffset: 199; }
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes graphic {
+  0% {
+    stroke-dashoffset: 100;
+    opacity: 1; }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1; } }
+
+@keyframes star1 {
+  0% {
+    transform: translate(0, 0) scale(1); }
+  100% {
+    transform: translate(40px, 160px) rotate(300deg) scale(0.8); } }
+
+@keyframes star2 {
+  0% {
+    transform: translate(0, 0) scale(1); }
+  100% {
+    transform: translate(-20px, 120px) rotate(300deg) scale(0.8); } }
+
+@keyframes world {
+  0% {
+    transform: translate(0, 0) scale(1); }
+  100% {
+    transform: translate(20px, 130px) rotate(340deg) scale(0.8); } }
+
+@keyframes sheet1 {
+  0% {
+    transform: translate(0, 0) scale(1); }
+  100% {
+    transform: translate(-50px, 150px) rotate(-60deg) scale(0.8); } }
+
+@keyframes sheet2 {
+  0% {
+    transform: translate(0, 0) scale(1); }
+  100% {
+    transform: translate(30px, 80px) rotate(90deg) scale(0.7); } }
+
+@keyframes watch {
+  0% {
+    transform: translate(0, 0) scale(1); }
+  100% {
+    transform: translate(-40px, 80px) rotate(-45deg) scale(0.7); } }
+
+@keyframes rotate_clockwise {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes rotate_anticlockwise {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-360deg); } }
+
+@media screen and (max-width: 480px) {
+  .pMkt {
+    padding: 25px 15px;
+    font-size: 25px;
+    line-height: 1.1; }
+  .pMkt2 {
+    padding: 0px 15px; } }
+
+.BI {
+  list-style: auto;
+  font-family: "Quicksand", sans-serif;
+  text-align: justify;
+  color: black; }
+
 footer {
   height: auto;
   background-color: #F6F6F5;
@@ -587,3 +798,14 @@ footer {
     text-decoration: none;
     color: #36669B;
     line-height: 60px; }
+  footer .footerUl {
+    list-style: none;
+    padding: 0px; }
+    footer .footerUl li {
+      height: 30px;
+      display: inline; }
+      footer .footerUl li a {
+        padding: 10px; }
+  @media screen and (max-width: 480px) {
+    footer .footerUl li {
+      display: block; } }
